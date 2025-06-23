@@ -1,0 +1,38 @@
+.highlights-container {
+  padding: 20px;
+  background: linear-gradient(to right, #facc15, #f97316);
+  min-height: 100vh;
+  color: #fff;
+  text-align: center;
+}
+
+.summary-box,
+.withdraw-box,
+.about-box {
+  background: white;
+  color: black;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+  text-align: left;
+}
+
+.withdraw-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.withdraw-box button {
+  width: 100%;
+  padding: 10px;
+  background-color: #f97316;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}

@@ -1,0 +1,33 @@
+.task-container {
+  padding: 20px;
+  background: linear-gradient(to right, #facc15, #f97316);
+  min-height: 100vh;
+  text-align: center;
+  color: white;
+}
+
+.task-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.watch-btn {
+  margin-top: 15px;
+  background-color: white;
+  color: #f97316;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.task-limit-msg {
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.task-progress {
+  margin-top: 10px;
+  font-size: 16px;
+}

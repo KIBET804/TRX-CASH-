@@ -1,38 +1,85 @@
 .highlights-container {
   padding: 20px;
-  background: linear-gradient(to right, #facc15, #f97316);
+  background-color: #f0f8ff; /* Light blue background */
   min-height: 100vh;
-  color: #fff;
-  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.summary-box,
-.withdraw-box,
-.about-box {
-  background: white;
-  color: black;
-  border-radius: 10px;
+.leaderboard-box,
+.withdraw-box {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   padding: 20px;
-  margin: 20px auto;
-  max-width: 400px;
-  text-align: left;
+  margin-bottom: 25px;
+}
+
+.leaderboard-box h2,
+.leaderboard-box h3,
+.withdraw-box h3 {
+  color: #1e3a8a;
+  margin-bottom: 12px;
 }
 
 .withdraw-box input {
+  display: block;
   width: 100%;
   padding: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #d1d5db;
   border-radius: 8px;
-  border: 1px solid #ccc;
+  font-size: 16px;
 }
 
 .withdraw-box button {
-  width: 100%;
-  padding: 10px;
-  background-color: #f97316;
-  border: none;
-  border-radius: 8px;
+  padding: 10px 20px;
+  background-color: #3b82f6;
   color: white;
   font-weight: bold;
+  border: none;
+  border-radius: 8px;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.withdraw-box button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.withdraw-box button:hover:not(:disabled) {
+  background-color: #2563eb;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background: #f0f8ff;
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 15px;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+  background-color: #3b82f6;
+  color: white;
+  font-weight: 600;
+}
+
+tr:hover {
+  background-color: #e0f7ff;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #111827;
 }
